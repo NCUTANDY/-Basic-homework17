@@ -1,0 +1,51 @@
+#include <stdio.h>　
+
+#include <stdlib.h> 
+
+int main(int argc, char *argv[]) {
+
+	int i[5]={0};
+
+	int j=0,small;
+
+	printf("-------------------------------------------------\n");  
+
+	printf("             找尋陣列中最小值的程式              \n");
+
+	printf("-------------------------------------------------\n");   
+
+	printf("請連續輸入五個數值：\n");
+
+	for(j=0;j<5;j++)
+
+	{
+
+	   printf("第%d筆資料：", j+1 );
+
+	   scanf("%d", &i[j]);
+
+	}
+
+	small=i[0];
+
+	for(j=0;j<5;j++)
+
+	{
+
+	  if (small>i[j])	
+
+	  {
+
+		  small=i[j];
+
+	  }
+
+	}
+
+	printf("最小值是：%d\n\n",small); 
+
+	system("pause");	
+
+	return 0;
+
+}
